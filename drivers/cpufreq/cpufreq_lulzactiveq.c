@@ -310,7 +310,7 @@ static int hotplug_freq[4][2] = {
 };
 #endif
 
-static int cpufreq_governor_lulzactive(struct cpufreq_policy *policy,
+static int __refdata cpufreq_governor_lulzactive(struct cpufreq_policy *policy,
 		unsigned int event);
 
 #ifndef CONFIG_CPU_FREQ_DEFAULT_GOV_LULZACTIVE
@@ -1750,7 +1750,7 @@ static inline void hotplug_timer_init(struct cpufreq_lulzactive_cpuinfo *dbs_inf
 			      &dbs_info->work, delay + 2 * HZ);
 }
 
-static int cpufreq_governor_lulzactive(struct cpufreq_policy *policy,
+static int __refdata cpufreq_governor_lulzactive(struct cpufreq_policy *policy,
 		unsigned int event)
 {
 	int rc;

@@ -201,7 +201,7 @@ static int hotplug_freq[4][2] = {
 static unsigned int min_sampling_rate;
 
 static void do_dbs_timer(struct work_struct *work);
-static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
+static int __refdata cpufreq_governor_dbs(struct cpufreq_policy *policy,
 				unsigned int event);
 
 #ifndef CONFIG_CPU_FREQ_DEFAULT_GOV_PEGASUSQ
@@ -1418,7 +1418,7 @@ static void cpufreq_pegasusq_late_resume(struct early_suspend *h)
 }
 #endif
 
-static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
+static int __refdata cpufreq_governor_dbs(struct cpufreq_policy *policy,
 				unsigned int event)
 {
 	unsigned int cpu = policy->cpu;

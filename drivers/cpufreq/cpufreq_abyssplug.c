@@ -51,7 +51,7 @@
 #define DEFAULT_HOTPLUG_OUT_SAMPLING_PERIODS		(20)
 
 static void do_dbs_timer(struct work_struct *work);
-static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
+static int __refdata cpufreq_governor_dbs(struct cpufreq_policy *policy,
 		unsigned int event);
 //static int hotplug_boost(struct cpufreq_policy *policy);
 
@@ -631,7 +631,7 @@ static inline void dbs_timer_exit(struct cpu_dbs_info_s *dbs_info)
 	cancel_delayed_work_sync(&dbs_info->work);
 }
 
-static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
+static int __refdata cpufreq_governor_dbs(struct cpufreq_policy *policy,
 				   unsigned int event)
 {
 	unsigned int cpu = policy->cpu;
