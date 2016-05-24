@@ -1239,7 +1239,7 @@ static long msm_vfe40_axi_halt(struct vfe_device *vfe_dev,
 	msm_camera_io_w(BIT(8), vfe_dev->vfe_base + 0x2C);
 	/* Clear IRQ Status*/
 #if !defined(CONFIG_MACH_LGE)
-	msm_camera_io_w(0x7FFFFFFF, vfe_dev->vfe_base + 0x30)
+	msm_camera_io_w(0x7FFFFFFF, vfe_dev->vfe_base + 0x30);
 	msm_camera_io_w(0xFEFFFEFF, vfe_dev->vfe_base + 0x34);
 	msm_camera_io_w(0x1, vfe_dev->vfe_base + 0x24);
 	if (blocking) {
