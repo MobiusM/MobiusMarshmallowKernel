@@ -451,14 +451,6 @@ config CPU_FREQ_GOV_PEGASUSQ
 
 	  If in doubt, say N.
 
-config CPU_FREQ_GOV_SAKURACTIVE
-	tristate "'sakuractive' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	  'sakuractive' governor.
-
-	  If in doubt, say N.
-
 config CPU_FREQ_GOV_SAVAGEDZEN
 	tristate "'savagedzen' cpufreq governor"
 	depends on CPU_FREQ
