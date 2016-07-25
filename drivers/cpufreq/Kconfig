@@ -180,12 +180,6 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVEX
 	help
 		Use the CPUFreq governor 'interactivex' as default.
 
-config CPU_FREQ_DEFAULT_GOV_LULZACTIVEQ
-	bool "lulzactiveq"
-	select CPU_FREQ_GOV_LULZACTIVEQ
-	help
-		Use the CPUFreq governor 'lulzactiveq' as default.
-		
 config CPU_FREQ_DEFAULT_GOV_SAKURACTIVE
 	bool "sakuractive"
 	select CPU_FREQ_GOV_SAKURACTIVE
