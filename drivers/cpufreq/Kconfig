@@ -139,13 +139,6 @@ config CPU_FREQ_DEFAULT_GOV_SMARTASSV2
 	help
 		Use the CPUFreq governor 'smartassV2' as default.
 
-config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND2
-	bool "intellidemand2"
-	select CPU_FREQ_GOV_INTELLIDEMAND2
-	help
-	  Use the CPUFreq governor 'intellidemand2' as default. This is
-	  based on Ondemand with browsing detection based on GPU loading
-
 config CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE
 	bool "intelliactive"
 	select CPU_FREQ_GOV_INTELLIACTIVE
