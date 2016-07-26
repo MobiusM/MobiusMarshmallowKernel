@@ -36,9 +36,9 @@
 
 /* Tuning Interface */
 #ifdef CONFIG_MACH_LGE
-#define FREQ_RESPONSIVENESS		998400
+#define FREQ_RESPONSIVENESS		384000
 #else
-#define FREQ_RESPONSIVENESS		787200
+#define FREQ_RESPONSIVENESS		300000
 #endif
 
 #define CPUS_DOWN_RATE			2
