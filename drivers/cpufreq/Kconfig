@@ -155,12 +155,6 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIMM
           Use the CPUFreq governor 'intelliminmax' as default. This is
           governor will use only 3 different frequencies, idle, UI and max
 
-config CPU_FREQ_DEFAULT_GOV_BRAZILIANWAX
-	bool "brazilianwax"
-	select CPU_FREQ_GOV_BRAZILIANWAX
-	help
-		Use the CPUFreq governor 'brazilianwax' as default.
-
 config CPU_FREQ_DEFAULT_GOV_HYPER
 	bool "HYPER"
 	select CPU_FREQ_GOV_HYPER
