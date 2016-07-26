@@ -188,4 +188,6 @@ else
 	fi
 fi
 
+res=$(cat /home/mobiusm/MobiusMarshmallow/gitversion)
+
 echo "$res"
