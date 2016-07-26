@@ -427,11 +427,11 @@ config CPU_FREQ_GOV_SAVAGEDZEN
 	  If in doubt, say N.
 
 config CPU_FREQ_GOV_LIONHEART
-           tristate "'lionheart' cpufreq governor"
-           depends on CPU_FREQ
-           help
-             lionheart' - a "smart" optimized governor!
-             If in doubt, say N.
+	tristate "'lionheart' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	  'lionheart' - A brave and agile conservative-based governor.
+	  If in doubt, say N.
 
 config CPU_FREQ_GOV_DANCEDANCE
            tristate "'dancedance' cpufreq governor"
